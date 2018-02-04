@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-slides #slides>
+        <ion-slide>
+            <h3>Question 1</h3>
+            <flashcard [isFlipped]="flashCardFlipped">
+                <div class="flash-card-front">Hello</div>
+                <div class="flash-card-back">doge</div>
+            </flashcard>
+            <h3>Select an option</h3>
+            <ion-list no-lines radio-group>
+                <ion-item>
+                    <ion-label>1. Helicopter</ion-label>
+                    <ion-radio (click)="selectAnswer()"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>2. Doge</ion-label>
+                    <ion-radio (click)="selectAnswer()"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>3. Plane</ion-label>
+                    <ion-radio (click)="selectAnswer()"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>4. Rocket</ion-label>
+                    <ion-radio (click)="selectAnswer()"></ion-radio>
+                </ion-item>
+            </ion-list>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
